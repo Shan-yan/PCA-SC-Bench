@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">PCA-SC-Bench</title>
+  <desc id="desc">A research benchmark connecting perception, cognition, action, and safety consistency.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071426"/>
+      <stop offset="0.56" stop-color="#102640"/>
+      <stop offset="1" stop-color="#12323a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.5" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="360" rx="24" fill="url(#background)"/>
+  <rect width="1200" height="360" rx="24" fill="url(#grid)"/>
+  <circle cx="1030" cy="38" r="190" fill="#2dd4bf" opacity="0.06"/>
+  <circle cx="94" cy="342" r="210" fill="#38bdf8" opacity="0.055"/>
+
+  <g transform="translate(76 78)">
+    <path d="M52 100H128M184 100H260M316 100H392" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+    <path d="m118 92 12 8-12 8M250 92l12 8-12 8M382 92l12 8-12 8" fill="none" stroke="#dffaf7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g filter="url(#glow)">
+      <circle cx="28" cy="100" r="28" fill="#0b243c" stroke="#38bdf8" stroke-width="3"/>
+      <circle cx="160" cy="100" r="28" fill="#0b2d38" stroke="#5eead4" stroke-width="3"/>
+      <circle cx="292" cy="100" r="28" fill="#263026" stroke="#fbbf24" stroke-width="3"/>
+      <circle cx="424" cy="100" r="28" fill="#18283a" stroke="#a7f3d0" stroke-width="3"/>
+    </g>
+
+    <g fill="#f8fafc" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" text-anchor="middle">
+      <text x="28" y="107">P</text>
+      <text x="160" y="107">C</text>
+      <text x="292" y="107">A</text>
+      <text x="424" y="107">SC</text>
+    </g>
+    <g fill="#bfdbfe" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle">
+      <text x="28" y="151">PERCEPTION</text>
+      <text x="160" y="151">COGNITION</text>
+      <text x="292" y="151">ACTION</text>
+      <text x="424" y="151">SAFETY</text>
+    </g>
+  </g>
+
+  <g transform="translate(580 100)" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif">
+    <text fill="#f8fafc" font-size="54" font-weight="750" letter-spacing="-1.5">PCA-SC-Bench</text>
+    <rect y="76" width="470" height="4" rx="2" fill="url(#accent)"/>
+    <text y="124" fill="#cbd5e1" font-size="19" letter-spacing="0.8">FROM UNDERSTANDING TO SAFE ACTION</text>
+    <text y="162" fill="#94a3b8" font-size="15">A research benchmark for multimodal decision-making</text>
+  </g>
+</svg>
