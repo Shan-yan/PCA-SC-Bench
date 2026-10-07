@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pca-sc-bench"
+version = "0.1.0"
+description = "A sanitized public interface preview for PCA-SC Bench score aggregation."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+keywords = ["benchmark", "evaluation", "multimodal", "safety"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://gomagichub.com/pcascshow/"
+Repository = "https://github.com/Shan-yan/PCA-SC-Bench"
+
+[project.scripts]
+pca-sc-eval = "pca_sc_bench.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
